@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-----     --AyshaTech--     ----->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger-Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="info">
+        <h1>Row Counter</h1>
+        <h2 id="count">0</h2>
+        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+        <button id="save-btn" onclick="save()">SAVE</button>
+        <p id="save-el">Previous entries: </p>
+    </div>
+    
+
+    <script>
+
+        let saveEl = document.getElementById("save-el");
+        let countEl = document.getElementById("count");
+
+        let count = 0;
+
+        function increment() {
+            count += 1;
+            countEl.textContent = count;
+        }
+
+        function save() {
+         let countStr = count + " - ";
+        saveEl.textContent += countStr; 
+        countEl.textContent = 0;
+        count = 0;
+        }
+    </script>
+</body>
+</html>

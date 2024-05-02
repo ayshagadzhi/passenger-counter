@@ -1,0 +1,60 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: #fff;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background: url("images/camera.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.info{
+    color: #fff;
+    background: linear-gradient(red, blue) right;
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+    border: 3px solid cyan;
+    border-radius: 15px;
+    padding: 80px;
+}
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+h2{
+    font-size: 50px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+button{
+    border: none;
+    padding: 10px 40px 10px 40px;
+    color: #fff;
+    background: darkblue;
+    font-weight: bold;
+    width: 200px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    background: blue;
+    border: 1px solid #fff;
+}
+#save-btn{
+    background: darkred;
+}
+#save-btn:hover{
+    background: red;
+    border: 1px solid #fff;
+}
